@@ -15,6 +15,7 @@ public class TableHandling extends Base {
 		System.out.println(tableRow.getText());
 		
 		
+		
 	}
 
 	public static void main(String[] args) {
