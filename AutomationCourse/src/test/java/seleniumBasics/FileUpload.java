@@ -14,7 +14,7 @@ public class FileUpload extends Base{
 	public void verifyFileUploaUsingSendKeys() {
 		driver.navigate().to("https://demo.guru99.com/test/upload");
 		WebElement choosefile=driver.findElement(By.xpath("//input[@id='uploadfile_0']"));
-		choosefile.sendKeys("C:\\Users\\artha\\git\\Automation_Repository\\AutomationCourse\\src\\test\\resources\\Bug Life Cycle. pdf");
+		choosefile.sendKeys("C:\\Users\\artha\\git\\Automation_Repository\\AutomationCourse\\src\\test\\resources\\CORE_JAVA_NOTES_New.pdf");
 		WebElement textCheckbox=driver.findElement(By.xpath("//input[@id='terms']"));
 		textCheckbox.click();
 		WebElement submit=driver.findElement(By.xpath("//button[@id='submitbutton']"));
@@ -25,7 +25,7 @@ public class FileUpload extends Base{
 		driver.navigate().to("https://www.ilovepdf.com/pdf_to_word");
 		WebElement selectPdf=driver.findElement(By.xpath("//a[@id='pickfiles']"));
 		selectPdf.click();
-		StringSelection s = new StringSelection("C:\\Users\\artha\\git\\Automation_Repository\\AutomationCourse\\src\\test\\resources\\Bug Life Cycle. pdf");
+		StringSelection s = new StringSelection("C:\\Users\\artha\\git\\Automation_Repository\\AutomationCourse\\src\\test\\resources\\CORE_JAVA_NOTES_New.pdf");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s,null); 
 		Robot robot = new Robot();
 		robot.delay(2500);
