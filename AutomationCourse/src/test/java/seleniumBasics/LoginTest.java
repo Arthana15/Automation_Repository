@@ -16,8 +16,10 @@ public class LoginTest extends TestNgBase{
 		login.enterUsernameOnUsernameField();
 		//WebElement username=driver.findElement(By.xpath("//input[@id='user-name']"));
 		//username.sendKeys("standard_user");
+		login.enterPasswordOnPasswordField();
 		//WebElement password=driver.findElement(By.xpath("//input[@id='password']"));
 		//password.sendKeys("secret_sauce");
+		login.clickOnLoginButton();
 		//WebElement loginButton=driver.findElement(By.xpath("//input[@id='login-button']"));
 		//loginButton.click();
 	}
